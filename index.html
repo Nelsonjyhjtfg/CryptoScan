@@ -43,35 +43,52 @@
 
     <!-- Main Content Section -->
     <main class="container mx-auto px-4 py-12">
-        <div class="grid md:grid-cols-2 gap-12 items-center">
-            <!-- Feature 1: Authentic & Reliable -->
-            <div class="bg-gray-800 rounded-2xl shadow-lg p-8">
-                <div class="flex items-center space-x-4 mb-4">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
-                    </svg>
-                    <h2 class="text-3xl font-semibold text-white">Authentic & Reliable</h2>
+        <!-- Section: App's Core Features -->
+        <section class="mb-20">
+            <h2 class="text-4xl font-bold text-center text-white mb-10">App's Core Features</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Feature 1 -->
+                <div class="bg-gray-800 rounded-2xl shadow-lg p-6">
+                    <h3 class="text-2xl font-semibold text-white mb-4">Authentic Blockchain Connectivity</h3>
+                    <p class="text-gray-400 leading-relaxed">
+                        Our app doesn't rely on fake, pre-written data. It uses the Web3j library to establish a direct connection with the blockchain nodes via the Alchemy API. This ensures every balance check and wallet scan is a verifiable, real-time query of the blockchain ledger.
+                    </p>
                 </div>
-                <p class="text-gray-400 leading-relaxed">
-                    Unlike many fake scanners on the market that are mere HTML shells, our application is a true native Android app. It directly connects to the blockchain to verify wallet balances, ensuring every piece of data is genuine and trustworthy.
-                </p>
+                <!-- Feature 2 -->
+                <div class="bg-gray-800 rounded-2xl shadow-lg p-6">
+                    <h3 class="text-2xl font-semibold text-white mb-4">Multi-threaded Performance</h3>
+                    <p class="text-gray-400 leading-relaxed">
+                        To maximize scanning speed, Wallet Hunter leverages Kotlin Coroutines to run multiple worker threads in parallel. This powerful approach allows the app to perform a significant number of wallet checks simultaneously, all while keeping the user interface smooth and responsive.
+                    </p>
+                </div>
+                <!-- Feature 3 -->
+                <div class="bg-gray-800 rounded-2xl shadow-lg p-6">
+                    <h3 class="text-2xl font-semibold text-white mb-4">Real-time Data & UI</h3>
+                    <p class="text-gray-400 leading-relaxed">
+                        We provide genuine real-time data. The app fetches current ETH and BNB prices from CoinGecko, offering a transparent view of the market. Its native Android UI is designed for performance, avoiding the sluggishness and vulnerabilities of HTML-based apps.
+                    </p>
+                </div>
             </div>
+        </section>
 
-            <!-- Feature 2: High Performance -->
+        <!-- Section: Comparison with Fake Apps -->
+        <section class="mb-20">
+            <h2 class="text-4xl font-bold text-center text-white mb-10">Why We Are Different</h2>
             <div class="bg-gray-800 rounded-2xl shadow-lg p-8">
-                <div class="flex items-center space-x-4 mb-4">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <circle cx="12" cy="12" r="10"></circle>
-                        <path d="M16 12l-4-4l-4 4"></path>
-                        <path d="M12 16l4-4l-4-4"></path>
-                    </svg>
-                    <h2 class="text-3xl font-semibold text-white">Intuitive & Beautiful UI</h2>
-                </div>
-                <p class="text-gray-400 leading-relaxed">
-                    We believe powerful tools deserve elegant interfaces. The app features a clean, modern design with a dark theme that is easy on the eyes. All functions are straightforward and intuitive, providing a seamless user experience.
+                <p class="text-gray-400 text-lg leading-relaxed mb-6">
+                    Many so-called "crypto scanners" are built to deceive. They claim impossible speeds (e.g., 1000 scans/sec) and use fraudulent practices. We've reverse-engineered these scams to expose their flaws, including:
+                </p>
+                <ul class="list-disc list-inside text-gray-400 leading-relaxed space-y-2">
+                    <li>Fake Code:  Often just an HTML file with empty JavaScript files.</li>
+                    <li>No Real Connectivity:They "work" without an internet connection because they aren't actually connected to the blockchain.</li>
+                    <li>Hardcoded Credentials:Passwords and keys are often hardcoded directly into the client-side code, a massive security vulnerability.</li>
+                    <li>Impossible Speeds:The advertised scanning speeds are physically and mathematically impossible given current technology and API limitations.</li>
+                </ul>
+                <p class="text-gray-400 text-lg leading-relaxed mt-6">
+                    Wallet Hunter, on the other hand, is a project built with a technical conscience. Every line of code serves a purpose, and every feature is grounded in the reality of blockchain technology.
                 </p>
             </div>
-        </div>
+        </section>
 
         <!-- Call to Action Section -->
         <div class="mt-16 text-center">
@@ -86,6 +103,5 @@
     <footer class="bg-gray-900 text-gray-500 py-8 text-center">
         <p>&copy; 2025 Wallet Hunter. All rights reserved.</p>
     </footer>
-
 </body>
 </html>
